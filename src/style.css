@@ -2,60 +2,57 @@
 
 @font-face {
   font-family: 'Gilroy';
-  src: url(../src/fonts/Gilroy-Light.eot);
+  src: url(./fonts/Gilroy-Light.eot);
   src:
     local('Gilroy Light'),
     local('Gilroy-Light'),
-    url(../src/fonts/Gilroy-Light.woff) format('woff'),
-    url(../src/fonts/Gilroy-Light.ttf) format('truetype');
+    url(./fonts/Gilroy-Light.woff) format('woff'),
+    url(./fonts/Gilroy-Light.ttf) format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url(../src/fonts/Gilroy-Medium.eot);
+  src: url(./fonts/Gilroy-Medium.eot);
   src:
     local('Gilroy Medium'),
     local('Gilroy-Medium'),
-    url(../src/fonts/Gilroy-Medium.woff) format('woff'),
-    url(../src/fonts/Gilroy-Medium.ttf) format('truetype');
+    url(./fonts/Gilroy-Medium.woff) format('woff'),
+    url(./fonts/Gilroy-Medium.ttf) format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url(../src/fonts/Gilroy-MediumItalic.eot);
+  /* src: url(./fonts/Gilroy-MediumItalic.eot); */
   src:
     local('Gilroy MediumItalic'),
     local('Gilroy-MediumItalic'),
-    url(../src/fonts/Gilroy-MediumItalic.woff) format('woff'),
-    url(../src/fonts/Gilroy-MediumItalic.ttf) format('truetype');
+    url(./fonts/Gilroy-MediumItalic.woff) format('woff'),
+    url(./fonts/Gilroy-MediumItalic.ttf) format('truetype');
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url(../src/fonts/Gilroy-Extrabold.eot);
+  src: url(./fonts/Gilroy-Extrabold.eot);
   src:
     local('Gilroy Extrabold'),
     local('Gilroy-Extrabold'),
-    url(../src/fonts/Gilroy-Extrabold.woff) format('woff'),
-    url(../src/fonts/Gilroy-Extrabold.ttf) format('truetype');
+    url(./fonts/Gilroy-Extrabold.woff) format('woff'),
+    url(./fonts/Gilroy-Extrabold.ttf) format('truetype');
   font-weight: 800;
   font-style: normal;
 }
 
 @media only screen and (max-width: 800px) {
-  /* Basic */
 
   body {
     padding-top: 1em !important;
   }
-
-  /* Header */
 
   .header {
     margin: 0 auto !important;
@@ -90,7 +87,7 @@
     gap: 25px !important;
   }
 
-  .header__menu .menu__item: {
+  .header__menu .menu__item:hover {
     color: var(--color-accent);
   }
 
@@ -129,6 +126,7 @@
     transform: rotate(-45deg) translate(5px, -6px);
     background-color: var(--color-cross);
   }
+
 }
 
 @media screen {

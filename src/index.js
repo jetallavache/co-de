@@ -1,3 +1,5 @@
+import './style.css';
+
 const burgerMenu = () => {
   const burger = document.getElementById('burger');
   const menu = document.getElementById('menu');
