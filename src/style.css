@@ -1,4 +1,5 @@
 /* Fonts */
+
 @font-face {
   font-family: 'Gilroy';
   src: url(../src/fonts/Gilroy-Light.eot);
@@ -49,6 +50,7 @@
 
 @media only screen and (max-width: 800px) {
   /* Basic */
+
   body {
     padding-top: 1em !important;
   }
@@ -86,6 +88,10 @@
     font-weight: var(--font-weight-medium) !important;
     flex-direction: column !important;
     gap: 25px !important;
+  }
+
+  .header__menu .menu__item: {
+    color: var(--color-accent);
   }
 
   .header__phone {
@@ -141,7 +147,6 @@
     --color-grey-light: #e1e1e1;
     --color-grey-dark: #8e8e8e;
     --color-border: #9f9f9f;
-
     --color-black-out: #222222;
 
     --font-size-xxs: 9px;
@@ -155,7 +160,6 @@
 
     --font-weight-regular: 300;
     --font-weight-medium: 500;
-    /* --font-weight-semibold: 700; */
     --font-weight-bold: 800;
 
     --border-radius-sm: 8px;
