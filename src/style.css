@@ -1,0 +1,192 @@
+/* Fonts */
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../src/fonts/Gilroy-Light.eot);
+  src:
+    local('Gilroy Light'),
+    local('Gilroy-Light'),
+    url(../src/fonts/Gilroy-Light.woff) format('woff'),
+    url(../src/fonts/Gilroy-Light.ttf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../src/fonts/Gilroy-Medium.eot);
+  src:
+    local('Gilroy Medium'),
+    local('Gilroy-Medium'),
+    url(../src/fonts/Gilroy-Medium.woff) format('woff'),
+    url(../src/fonts/Gilroy-Medium.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../src/fonts/Gilroy-MediumItalic.eot);
+  src:
+    local('Gilroy MediumItalic'),
+    local('Gilroy-MediumItalic'),
+    url(../src/fonts/Gilroy-MediumItalic.woff) format('woff'),
+    url(../src/fonts/Gilroy-MediumItalic.ttf) format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../src/fonts/Gilroy-Extrabold.eot);
+  src:
+    local('Gilroy Extrabold'),
+    local('Gilroy-Extrabold'),
+    url(../src/fonts/Gilroy-Extrabold.woff) format('woff'),
+    url(../src/fonts/Gilroy-Extrabold.ttf) format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Basic */
+
+:root {
+  --font-family-base: 'Gilroy', sans-serif;
+
+  --color-accent: #f15525;
+  --color-white: #ffffff;
+  --color-dark: #22253b;
+  --color-blue: #38bff2;
+  --color-background: #f9f8fd;
+  --color-blue-primary: #eaf2f5;
+  --color-cross: #bcbcbc;
+  --color-grey-light: #e1e1e1;
+  --color-grey-dark: #8e8e8e;
+  --color-border: #9f9f9f;
+
+  --color-black-out: #222222;
+
+  --font-size-xxs: 9px;
+  --font-size-xs: 13px;
+  --font-size-sm: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 24px;
+  --font-size-xl: 32px;
+  --font-size-xxl: 36px;
+  --font-size-46: 46px;
+
+  --font-weight-regular: 300;
+  --font-weight-medium: 500;
+  /* --font-weight-semibold: 700; */
+  --font-weight-bold: 800;
+
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 20px;
+  --border-radius-xl: 30px;
+  --border-radius-50: 50px;
+  --border-radius-75: 75px;
+
+  --container-width: 1160px;
+  --container-padding: 15px;
+
+  --transition: all 0.1s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-background);
+  color: var(--color-dark);
+  height: 100%;
+  width: auto;
+  /* padding: 0 119px; */
+  font-size: 100%;
+  line-height: 1;
+}
+
+a {
+  color: inherit;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+  list-style-type: none;
+}
+
+/* Header */
+
+.header {
+  margin-top: 24px;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  position: relative;
+  z-index: 999;
+}
+
+.header__inner {
+  padding: 15px 34px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(7.5px);
+  border-radius: var(--border-radius-75);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+
+.header__logo .logo__accent_blue {
+  color: var(--color-blue);
+}
+
+.header__logo .logo__accent_orange {
+  color: var(--color-accent);
+}
+
+.header__menu .menu__list {
+  display: flex;
+  gap: 41px;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+}
+
+.header__menu .menu__item {
+  transition: var(--transition);
+}
+
+.header__menu .menu__item:hover {
+  color: var(--color-accent);
+}
+
+.header__phone {
+  color: var(--color-blue);
+  font-weight: var(--font-weight-regular);
+}
+
+.header__burger {
+  display: none;
+}
+
+/* Slider */
